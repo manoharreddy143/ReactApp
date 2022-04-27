@@ -2,7 +2,9 @@
     const App=()=>{
         const[data, SetData]=useState({
             name: "",
-            age:""
+            age:"",
+            qualification: "",
+
         })
         const changeHandler = e=>{
             SetData({...data,[e.target.name]:e.target.value});
@@ -27,6 +29,8 @@
             <label>Name</label><br />
             <input type="text" name="name" onchange={changeHandler}/> <br />
             <label>age</label><br />
+            <input type="text" name="age" onchange={changeHandler}/> <br />
+            <input type='submit' value="Post data"/>
             <input type="text" name="age" onchange={changeHandler}/> <br />
             <input type='submit' value="Post data"/>
             
