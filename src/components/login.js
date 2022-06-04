@@ -3,7 +3,7 @@
         const[data, SetData]=useState({
             name: "",
             age:"",
-            qualification: "",
+            qualification: ""
 
         })
         const changeHandler = e=>{
@@ -31,7 +31,7 @@
             <label>age</label><br />
             <input type="text" name="age" onchange={changeHandler}/> <br />
             <input type='submit' value="Post data"/>
-            <input type="text" name="age" onchange={changeHandler}/> <br />
+            <input type="text" name="qualification" ></input> <br />
             <input type='submit' value="Post data"/>
             
             </form> 
